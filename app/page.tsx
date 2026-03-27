@@ -32,6 +32,9 @@ import {
   Paperclip
 } from "lucide-react"
 
+import HomeScreen from "@/components/screens/HomeScreen";
+import MenuScreen from "@/components/screens/MenuScreen";
+
 type Screen = "home" | "menu" | "subject" | "study" | "test" | "progress" | "profile" | "subtopics" | "studyView" | "exercise" | "miniTest" | "completed" | "surpriseExam" | "quickSession" | "notes" | "tutorChat"
 
 export default function AxonApp() {
