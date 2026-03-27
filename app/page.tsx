@@ -37,6 +37,9 @@ import MenuScreen from "@/components/screens/MenuScreen";
 
 type Screen = "home" | "menu" | "subject" | "study" | "test" | "progress" | "profile" | "subtopics" | "studyView" | "exercise" | "miniTest" | "completed" | "surpriseExam" | "quickSession" | "notes" | "tutorChat"
 
+export default function Page() {
+  const [screen, setScreen] = useState<Screen>("home");
+
 export default function AxonApp() {
   const [currentScreen, setCurrentScreen] = useState<Screen>("home")
   const [previousScreen, setPreviousScreen] = useState<Screen>("home")
