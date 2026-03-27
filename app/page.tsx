@@ -39,7 +39,14 @@ type Screen = "home" | "menu" | "subject" | "study" | "test" | "progress" | "pro
 
 export default function Page() {
   const [screen, setScreen] = useState<Screen>("home");
-
+return (
+    <>
+      {screen === "home" && <HomeScreen goTo={setScreen} />}
+      {screen === "menu" && <MenuScreen goTo={setScreen} />}
+    </>
+  );
+}
+ 
 export default function AxonApp() {
   const [currentScreen, setCurrentScreen] = useState<Screen>("home")
   const [previousScreen, setPreviousScreen] = useState<Screen>("home")
