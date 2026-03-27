@@ -39,7 +39,7 @@ type Screen = "home" | "menu" | "subject" | "study" | "test" | "progress" | "pro
 
 export default function Page() {
   const [screen, setScreen] = useState<Screen>("home");
-return (
+  return (
     <>
       {screen === "home" && <HomeScreen goTo={setScreen} />}
       {screen === "menu" && <MenuScreen goTo={setScreen} />}
